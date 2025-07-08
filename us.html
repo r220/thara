@@ -15,7 +15,7 @@
                 overflow-x: clip;
             }
             li {
-                align-content: -webkit-center;
+                -webkit-align-content: center;
                 align-content: center;
             }
             #intro {
@@ -28,7 +28,7 @@
                 width: 100%;
                 flex-direction: column;
                 color: #492E87;
-                align-content: -webkit-center;
+                -webkit-align-content: center;
                 align-content: center;
                 transition: transform 0.3s ease;
             }
@@ -42,6 +42,7 @@
                 background: rgb(238 234 251 / 54%);
                 z-index: 1;
                 background-color: rgb(73 46 135 / 50%);
+                -webkit-backdrop-filter: sepia(1);
                 backdrop-filter: sepia(1);
             }
             .intro-content {              
@@ -54,7 +55,7 @@
             #intro .display-6 {
                 text-shadow: 0px 0px 6px #fff2af;
             }
-            .navbar {
+            header {
                 top: 1em;
             }
             hr {
@@ -68,7 +69,7 @@
                 box-shadow: 0px -2px 20px 6px #00000040;
             }
             .img-holder {
-                justify-items: -webkit-center;
+                -webkit-justify-items: center;
                 justify-items: center;
             }
             .img-circle {
@@ -90,6 +91,7 @@
             /* vision */
             #vision {
                 background-color: #fff3dbc4 !important;
+                -webkit-backdrop-filter: blur(6px);
                 backdrop-filter: blur(6px);
                 box-shadow: 0px 5px 20px 6px #00000040;
             
@@ -112,10 +114,11 @@
             }
             .card .card-body {
                 border-radius: 1.5rem;
+                display: -webkit-flex;
                 display: flex;
-                flex-direction: -webkit-column;
+                -webkit-flex-direction: column;
                 flex-direction: column;
-                align-items: -webkit-center;
+                -webkit-align-items: center;
                 align-items: center;
             }
             #goals h3 {
@@ -129,7 +132,7 @@
             #splide_values .card {
                 background-color: var(--light-white);
                 color: var(--purple);
-                justify-content: -webkit-center;
+                -webkit-justify-content: center;
                 justify-content: center;
                 height: 96%;
                 border-radius: 1rem;
@@ -146,13 +149,14 @@
             
             /* target */
             #target .card h2{
-                align-content: -webkit-center;
+                -webkit-align-content: center;
                 align-content: center;
                 height: 100%;
             }
             /**/
             #goals, #values, #target {
                 background-color: rgb(73 46 135 / 60%);
+                -webkit-backdrop-filter: blur(2px);
                 backdrop-filter: blur(2px);
             }
             /**/
@@ -161,6 +165,7 @@
             }
             #platform-sections, #companies{
                 background-color: color(srgb 1 0.95 0.86 / 0.8) !important;
+                -webkit-backdrop-filter: blur(5px);
                 backdrop-filter: blur(5px);
             }
             /* platform-sections */
@@ -169,7 +174,7 @@
             /* companies */
             .companies-card {
                 height: 90%; 
-                justify-items: -webkit-center;              
+                -webkit-justify-items: center;              
                 justify-items: center;
                 border-radius: 1rem;
                 box-shadow: 2px 2px 9px 1px #0000005e;
@@ -185,7 +190,7 @@
                 color: #fff200;
                 height: 70%;
                 width: 100%;
-                align-content: -webkit-center;
+                -webkit-align-content: center;
                 align-content: center;
             }
 
@@ -197,7 +202,7 @@
            
             .companies-card h6 {
                 height: 30%;
-                align-content: -webkit-center;
+                -webkit-align-content: center;
                 align-content: center;
                 text-align: center;
             }
@@ -226,6 +231,7 @@
             /* conclusion */
             #conclusion {
                 background-color: #fff3dba8 !important;
+                -webkit-backdrop-filter: blur(6px);
                 backdrop-filter: blur(6px);
                 
             }
@@ -240,33 +246,35 @@
         </style>
     </head>
     <body>
-         <nav id="navbar" class="navbar navbar-expand-lg container bg-light rounded-3 z-3">
-            <div class="container-fluid">
-                <a class="navbar-brand text-purple" href="index.html">LOGO</a>
-                <button class="navbar-toggler text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon text-purple"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav text-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">الرئيسية</a>
-                        </li>
-                        <hr class="my-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="podcasts.html">الإذاعة</a>
-                        </li>
-                        <hr class="my-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="blogs.html">المدونة</a>
-                        </li>
-                        <hr class="my-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="us.html">من نحن</a>
-                        </li>
-                    </ul>
+        <header class="d-flex justify-content-center z-3">
+            <nav id="navbar" class="navbar navbar-expand-lg container bg-light rounded-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-purple" href="index.html">LOGO</a>
+                    <button class="navbar-toggler text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-purple"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">الرئيسية</a>
+                            </li>
+                            <hr class="my-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="podcasts.html">الإذاعة</a>
+                            </li>
+                            <hr class="my-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="blogs.html">المدونة</a>
+                            </li>
+                            <hr class="my-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="us.html">من نحن</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
         <section id="intro" class="hero text-light z-0" data-aos="zoom-out" data-aos-duration="1000">
             <div class="intro-content container z-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="100">
@@ -469,21 +477,21 @@
             <div class="container">
                 <h2 class="mb-5">ثَرى تقدم محتوى قانونيًا بصيغ متعددة تلائم مختلف أنماط التلقي</h2>
                 <div class="row g-4 justify-content-center">
-                    <div class="col-6 col-sm-4" data-aos="fade-up" data-aos-duration="800">
+                    <div class="col-sm-6 col-sm-4" data-aos="fade-up" data-aos-duration="800">
                         <div class="p-3 bg-section-card rounded shadow h-100">
                             <img src="assets/gif/microphone.gif" alt="إذاعة" class="img-fluid rounded">
                             <h5>حلقات بودكاست صوتية ومرئية</h5>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="col-sm-6 col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                         <div class="p-3 bg-section-card rounded shadow h-100">
                             <img src="assets/gif/analytics.gif" alt="مدونات" class="img-fluid rounded">
                             <h5>مقالات وتجارب مهنية مكتوبة</h5>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="col-sm-6 col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <div class="p-3 bg-section-card rounded shadow h-100">
-                            <img src="assets/gif/training (1).gif" alt="مدونات" class="img-fluid rounded">
+                            <img src="assets/gif/training.gif" alt="مدونات" class="img-fluid rounded">
                             <h5>لقاءات مباشرة ومسجلة مع مختصين</h5>
                         </div>
                     </div>

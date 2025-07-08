@@ -12,14 +12,19 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/index.css">
         <style>
-            .navbar {
+            header {
                 top: 1rem;
             }
             #blogs {
                 padding-top: 8rem;
-                background-color: color(srgb 1 0.95 0.86 / 0.6) !important;
+                -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
                 background-color: color(srgb 0.79 0.74 0.63 / 0.5) !important;
+                min-height: 80vh;
+            }
+            .title-hr {
+                margin: auto;
+                border: 1px solid;
             }
             .blog-card {
                 background-color: var(--light-white);
@@ -33,39 +38,41 @@
     </head>
     <body>
 
-         <nav id="navbar" class="navbar navbar-expand-lg container bg-light rounded-3 z-3">
-            <div class="container-fluid">
-                <a class="navbar-brand text-purple" href="index.html">LOGO</a>
-                <button class="navbar-toggler text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon text-purple"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav text-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">الرئيسية</a>
-                        </li>
-                        <hr class="my-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="podcasts.html">الإذاعة</a>
-                        </li>
-                        <hr class="my-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="blogs.html">المدونة</a>
-                        </li>
-                        <hr class="my-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="us.html">من نحن</a>
-                        </li>
-                    </ul>
+        <header class="d-flex justify-content-center z-3">
+            <nav id="navbar" class="navbar navbar-expand-lg container bg-light rounded-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-purple" href="index.html">LOGO</a>
+                    <button class="navbar-toggler text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-purple"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">الرئيسية</a>
+                            </li>
+                            <hr class="my-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="podcasts.html">الإذاعة</a>
+                            </li>
+                            <hr class="my-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="blogs.html">المدونة</a>
+                            </li>
+                            <hr class="my-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="us.html">من نحن</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <section class="hero-background" data-aos="zoom-out" data-aos-duration="1000"> 
         </section>
         <section id="blogs" class="section bg-dark text-purple">
             <div class="container">
                 <h2 class="text-center m-0">المدونات</h2>
-                <hr class="my-5 w-25" style="justify-self: center; border: 1px solid;">
+                <hr class="title-hr my-5 w-25">
                 <div class="row g-3">
                     <div class="col-sm-12 col-md-6" data-aos="fade-up" data-aos-duration="600">
                         <a class="blog-card d-flex">
