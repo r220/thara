@@ -26,7 +26,7 @@
 .text-dark-yellow {color: var(--dark-yellow);}
 
 .d-flex {
-    display: -webkit-flex I !important;
+    display: -webkit-flex !important;
     display: flex !important;
 }
 .justify-content-center {
@@ -123,18 +123,16 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    position: fixed;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
     color: #492E87;
-    transition: transform 0.5s ease;
+    
     /* hero */
     position: fixed;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    -webkit-align-content: center;
+    align-content: center;
+    transition: transform 0.5s ease;
 }
 .hero-nav {
     position: fixed;
