@@ -172,10 +172,15 @@
             /* members */
             /* visual-identity */
             /* companies */
+            #companies .splide__slide {
+                display: -webkit-flex I !important;
+                display: flex !important;
+                -webkit-align-items: center !important;
+                align-items: center !important;
+            }
             .companies-card {
                 height: 90%; 
-                -webkit-justify-items: center;              
-                justify-items: center;
+                width: 100%;
                 border-radius: 1rem;
                 box-shadow: 2px 2px 9px 1px #0000005e;
                 transition: background-color 0.3s ease;
@@ -338,7 +343,7 @@
             <div class="container">
                 <h2 class="mb-5">أهـدافـنـا</h2>
                 <div class="row g-3 justify-content-center">
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="800">
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>1</h3>
@@ -346,7 +351,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="800">
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>2</h3>
@@ -354,7 +359,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="800">
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>3</h3>
@@ -362,7 +367,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="600">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="600">
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>4</h3>
@@ -370,7 +375,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="600">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="600">
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>5</h3>
@@ -378,7 +383,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="600">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="600">
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>6</h3>
@@ -386,7 +391,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="900">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex" data-aos="fade-up" data-aos-duration="900">
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>7</h3>
@@ -757,7 +762,7 @@
                 direction: 'rtl',
                 pagination: true,
                 drag: 'free',
-                autoplay: true,
+                autoplay: false,
                 interval: 2000,
                 speed: 1000,
 
