@@ -45,6 +45,10 @@
     -webkit-align-content: center !important;
     align-content: center !important;
 }
+.align-items-center {
+    -webkit-align-items: center !important;
+    align-items: center !important;
+}
 /****************************************/
 
 

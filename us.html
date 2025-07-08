@@ -190,8 +190,13 @@
                 color: #fff200;
                 height: 70%;
                 width: 100%;
-                -webkit-align-content: center;
-                align-content: center;
+                
+                display: flex;
+                display: -webkit-flex;
+                -webkit-justify-content: center !important;
+                justify-content: center !important;
+                -webkit-align-items: center !important;
+                align-items: center !important;
             }
 
             @media (max-width: 505px) {
@@ -276,7 +281,7 @@
             </nav>
         </header>
 
-        <section id="intro" class="hero text-light z-0" data-aos="zoom-out" data-aos-duration="1000">
+        <section id="intro" class="hero d-flex justify-content-center text-light z-0" data-aos="zoom-out" data-aos-duration="1000">
             <div class="intro-content container z-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="100">
                 <h4 class="display-1 text-center mb-4" style="font-weight: bold;">حــكـــايــــة ثــــرى</h4>
                 <h4 class="display-6 text-center">أصلٌ وجذور، ونماءٌ.. اسمٌ يُجسّد رؤيتنا في التأسيس والتمكين</h4>
@@ -295,7 +300,9 @@
                             </p>
                         </div>
                         <div class="col-md-6 img-holder" data-aos="fade-right" data-aos-duration="800">
-                            <div class="img-circle w-100 rounded-5 align-content-center text-center">ارفقوا صورة للعنوان</div>
+                            <div class="img-circle w-100 rounded-5 d-flex justify-content-center align-items-center">
+                                <p>ارفقوا صورة للعنوان</p>
+                            </div>
                         </div>
                 </div>
             </div>
