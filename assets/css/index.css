@@ -404,8 +404,11 @@ footer .container {
     padding: 50px 0;
 }
 .footer_block {
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: flex-start;
     align-items: flex-start;
+    -webkit-justify-content: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     height: 100%;

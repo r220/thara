@@ -112,7 +112,7 @@
             .card:hover {
                 background-color: #fff1c5 !important;
             }
-            .card .card-body {
+            #goals .card-body {
                 border-radius: 1.5rem;
                 display: -webkit-flex;
                 display: flex;
@@ -120,6 +120,18 @@
                 flex-direction: column;
                 -webkit-align-items: center;
                 align-items: center;
+            }
+            #goals .card-text {
+                height: 100%;
+
+                display: -webkit-flex;
+                display: flex;
+
+                -webkit-align-items: center;
+                align-items: center;
+
+                -webkit-justify-content: center;
+                justify-content: center;
             }
             #goals h3 {
                 background-color: #ffecec;
@@ -328,7 +340,9 @@
                             </p>
                         </div>
                         <div class="col-md-6 img-holder" data-aos="fade-left" data-aos-duration="800">
-                            <div class="img-circle w-100 rounded-5 align-content-center text-center">ارفقوا صورة للعنوان</div>
+                            <div class="img-circle w-100 rounded-5 d-flex align-content-center justify-content-center">
+                                <p>ارفقوا صورة للعنوان</p>
+                            </div>
                         </div>
                 </div>
             </div>
@@ -347,7 +361,9 @@
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>1</h3>
-                                <div class="card-text">ربط الطلاب بالواقع المهني القانوني عبر محتوى تطبيقي حي</div>
+                                <div class="card-text">
+                                    <div>ربط الطلاب بالواقع المهني القانوني عبر محتوى تطبيقي حي</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -355,7 +371,13 @@
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>2</h3>
-                                <div class="card-text">نقل تجارب الخبراء والممارسين لتقريب الصورة المهنية للطلاب</div>
+                                <div class="card-text">
+                                    <div>
+                                        <div>
+                                            نقل تجارب الخبراء والممارسين لتقريب الصورة المهنية للطلاب
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -363,7 +385,11 @@
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>3</h3>
-                                <div class="card-text">بناء فهم متوازن بين النظرية القانونية والتطبيق العملي</div>
+                                <div class="card-text">
+                                    <div>
+                                        بناء فهم متوازن بين النظرية القانونية والتطبيق العملي
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -371,7 +397,11 @@
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>4</h3>
-                                <div class="card-text">تعزيز الوعي بالفرص والتحديات القانونية في السوق المحلي</div>
+                                <div class="card-text">
+                                    <div>
+                                        تعزيز الوعي بالفرص والتحديات القانونية في السوق المحلي
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -379,7 +409,11 @@
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>5</h3>
-                                <div class="card-text">تمكين الطلاب من تحديد مساراتهم القانونية بدقة</div>
+                                <div class="card-text">
+                                    <div>
+                                        تمكين الطلاب من تحديد مساراتهم القانونية بدقة
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -387,7 +421,11 @@
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>6</h3>
-                                <div class="card-text">إثراء الثقافة القانونية بأساليب تعليمية مبتكرة ومرنة</div>
+                                <div class="card-text">
+                                    <div>
+                                        إثراء الثقافة القانونية بأساليب تعليمية مبتكرة ومرنة
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -395,7 +433,11 @@
                         <div class="card text-purple bg-dark rounded-4">
                             <div class="card-body rounded-4">
                                 <h3>7</h3>
-                                <div class="card-text">دعم جاهزية الشباب لسوق العمل عبر التفكير التحليلي والنقدي</div>
+                                <div class="card-text">
+                                    <div>
+                                        دعم جاهزية الشباب لسوق العمل عبر التفكير التحليلي والنقدي
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -529,26 +571,34 @@
                                        <li class="splide__slide">
                                             <div class="companies-card p-4 text-dark bg-purple">
                                                 <i class="fa-solid fa-building-columns"></i>
-                                                <h6 class="">الجامعات والكليات القانونية</h6>            
+                                                <h6 class="d-flex justify-content-center align-items-center">
+                                                    الجامعات والكليات القانونية
+                                                </h6>            
                                             </div>
                                         </li>
                                         <li class="splide__slide">
                                             <div class="companies-card p-4 text-dark bg-purple">
                                                 <i class="fa-solid fa-scale-balanced"></i>
-                                                <h6 class="">الجهات التدريبية والمهنية</h6>            
+                                                <h6 class="d-flex justify-content-center align-items-center">
+                                                    الجهات التدريبية والمهنية
+                                                </h6>            
                                             </div>
                                         </li>
                                         <li class="splide__slide">
                                             <div class="companies-card p-4 text-dark bg-purple">
                                                 
                                                 <i class="fa-solid fa-users"></i>
-                                                <h6 class="">الجمعيات الطلابية</h6>            
+                                                <h6 class="d-flex justify-content-center align-items-center">
+                                                    الجمعيات الطلابية
+                                                </h6>            
                                             </div>
                                         </li>
                                         <li class="splide__slide">
                                             <div class="companies-card p-4 text-dark bg-purple">
                                                 <i class="fa-solid fa-gavel"></i>
-                                                <h6 class="">مكاتب المحاماة والمنصات المعرفية</h6>            
+                                                <h6 class="d-flex justify-content-center align-items-center">
+                                                    مكاتب المحاماة والمنصات المعرفية
+                                                </h6>            
                                             </div>
                                         </li>
                                     </ul>
