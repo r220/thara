@@ -112,12 +112,12 @@ html {
 }
 
 /* 1- HERO */
-#hero {
+/* #hero {
     position: fixed;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-}
+} */
 .hero-background {
     background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
     background-size: cover;
@@ -130,6 +130,11 @@ html {
     width: 100%;
     color: #492E87;
     transition: transform 0.5s ease;
+    /* hero */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 .hero-nav {
     position: fixed;
@@ -147,14 +152,14 @@ html {
 .hero-content p {
     font-size: 1.1em;
 }
-.hero .btn, #about .btn {
+#hero .btn, #about .btn {
+
     background-color: var(--dark-yellow);
     color: #493d9e;
     font-weight: bold;
-    box-shadow: inset -1px -1px 6px 0px #0000003d;
+    box-shadow: inset 5px 5px 7px 0px #ffffff87;
     transition: background-color 0.3s;
-
-    
+    /* border: 1px solid color(srgb 0.29 0.18 0.53 / 0.25); */
 }
 #about .btn {
         box-shadow:  -1px -1px 6px 0px #ffffff79;
@@ -442,8 +447,11 @@ footer .container {
 
 
 .footer-list {
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: flex-start;
     align-items: flex-start;
+    -webkit-justify-content: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     list-style: none;
@@ -481,12 +489,15 @@ body ul.footer-list--social-links li a {
     display: flex !important;
     width: 40px !important;
     height: 40px !important;
-    justify-content: center;
+    
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
     padding: 10px 0;
-    color: var(--light-purple);
-    color: #f2e1be;
-    color: var(--dark-yellow);
     color: var(--lighter-purple) ;
     border-radius: 50%;
     text-align: center;
