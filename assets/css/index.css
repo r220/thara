@@ -25,6 +25,26 @@
 .text-light-purple {color: var(--light-purple);}
 .text-dark-yellow {color: var(--dark-yellow);}
 
+.d-flex {
+        display: -webkit-flex I !important;
+    display: flex !important;
+}
+.justify-content-center {
+    justify-content: -webkit-center !important;
+    justify-content: center !important;
+}
+.justify-content-between {
+    justify-content: -webkit-space-between !important;
+    justify-content: space-between !important;
+}
+.justify-content-end {
+    justify-content: -webkit-end !important;
+    justify-content: end !important;
+}
+.align-content-center {
+    align-content: -webkit-center !important;
+    align-content: center !important;
+}
 /****************************************/
 
 
