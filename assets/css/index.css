@@ -42,8 +42,10 @@
     justify-content: space-between !important;
 }
 .justify-content-end {
-    -webkit-justify-content: end !important;
-    justify-content: end !important;
+    -webkit-justify-content: flex-end !important;
+    justify-content: flex-end !important;
+    -webkit-align-items: flex-end !important;
+    align-items: flex-end !important;
 }
 .align-content-center {
     -webkit-align-content: center !important;
