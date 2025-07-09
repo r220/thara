@@ -21,6 +21,10 @@
                 -webkit-backdrop-filter: blur(5px);
                 backdrop-filter: blur(5px);
             }
+            .multiple-bg-purple {
+                background-color: #492E87 !important;
+                position: relative;
+            }
             html, body {
                 overflow-x: clip;
             }
@@ -57,6 +61,8 @@
             }
             .intro-content {              
                 position: relative;
+                transition: opacity 0.3 ease;
+
             }
             #intro .display-1 {
                 font-weight: bold;
@@ -74,10 +80,10 @@
             .text-light-op {
                 color: #fff3dbb8 !important;
             }
-            /* us */
-            #us {
-                box-shadow: 0px -2px 20px 6px #00000040;
+            #idea .text-light-op {
+                margin-bottom: 0.4rem;
             }
+            /* us */
             .img-holder {
                 -webkit-justify-items: center;
                 justify-items: center;
@@ -85,10 +91,15 @@
             .img-circle {
                 position: relative;
                 width: 100%;
-                height: 18rem;
+                height: 100%;
                 border-radius: 9rem;
                 background: var(--light-purple);
                 box-shadow: 0px 0px 11px 3px #ffffff57;
+            }
+            @media only screen and (max-width:767px) {
+                .img-circle {
+                    height: 18rem;
+                }
             }
             .img-text {
                 position: absolute;
@@ -184,7 +195,7 @@
             */
             #platform-sections {
                 box-shadow:none;
-                background-color: none;
+                background-color: none !important;
             }
             /*
             #platform-sections, #companies{
@@ -317,48 +328,45 @@
             </div>
         </section>
         <div class="spacer" style="height: 90vh;"></div>
-
-        <section id="us" class="section bg-purple text-light pb-4">
-            <div class="container">
-                <div class="row">
-                        <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="800">
-                            <h5 class="title--has-dash mb-3">من نحن</h5>
-                            <p class="text-light-op">نحن فريق شغوف يسعى إلى تحويل المعرفة القانونية من نصوص صامتة إلى قصص حية تنبض بالخبرة وتُمهّد الطريق لصناعة أثر.
-                                ثَرى هي مبادرة تطوعية رقمية تهدف إلى تمكين طلبة القانون والخريجين الجدد من بناء فهم مهني واقعي ومتوازن لمساراتهم القانونية، عبر نقل التجربة الحقيقية من الميدان إلى الطالب.
-                                جاءت “ثَرى” لتكون التربة الخصبة التي تُنبت فيها عقول القانونيين، وتنمو على أرضها الطموحات المهنية الواعية، وتزدهر فيها بذور الفهم العميق والاستعداد المهني.
-                            </p>
-                        </div>
-                        <div class="col-md-6 img-holder" data-aos="fade-right" data-aos-duration="800">
-                            <div class="img-circle w-100 rounded-5 d-flex justify-content-center align-items-center">
-                                <p>ارفقوا صورة للعنوان</p>
+        <div class="multiple-bg-purple">
+            <section id="us" class="section text-light pb-4">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="800">
+                                <h5 class="title--has-dash mb-3">من نحن</h5>
+                                <p class="text-light-op">نحن فريق شغوف يسعى إلى تحويل المعرفة القانونية من نصوص صامتة إلى قصص حية تنبض بالخبرة وتُمهّد الطريق لصناعة أثر.
+                                    ثَرى هي مبادرة تطوعية رقمية تهدف إلى تمكين طلبة القانون والخريجين الجدد من بناء فهم مهني واقعي ومتوازن لمساراتهم القانونية، عبر نقل التجربة الحقيقية من الميدان إلى الطالب.
+                                    جاءت “ثَرى” لتكون التربة الخصبة التي تُنبت فيها عقول القانونيين، وتنمو على أرضها الطموحات المهنية الواعية، وتزدهر فيها بذور الفهم العميق والاستعداد المهني.
+                                </p>
                             </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="idea" class="section bg-purple text-light pt-4" dir="ltr">
-            <div class="container">
-                <div class="row">
-                        <div class="col-md-6 mb-4" dir="rtl" data-aos="fade-right" data-aos-duration="800">
-                            <h5 class="title--has-dash mb-3">فكرة المبادرة</h5>
-                            <p class="text-light-op">
-                                تنطلق “ثَرى” من حاجة طلبة القانون لفهم الواقع المهني من الداخل، وذلك من خلال ربطهم بتجارب حقيقية وعملية عبر محتوى تفاعلي متنوع يشمل:
-                                • حلقات بودكاست قانونية مع ممارسين وخبراء.
-                                • لقاءات حوارية مباشرة مع نخبة من المختصين.
-                                • مقالات وتجارب مكتوبة يشارك فيها أصحاب الخبرة الميدانية.
-
-                                نهدف إلى كشف الصورة الحقيقية للعمل القانوني، وإبراز التحديات التي قد تواجه المبتدئين، وتسليط الضوء على الفرص الواعدة وتقديم نصائح عملية ومباشرة.
-                            </p>
-                        </div>
-                        <div class="col-md-6 img-holder" data-aos="fade-left" data-aos-duration="800">
-                            <div class="img-circle w-100 rounded-5 d-flex justify-content-center align-items-center">
-                                <p>ارفقوا صورة للعنوان</p>
+                            <div class="col-md-6 img-holder" data-aos="fade-right" data-aos-duration="800">
+                                <div class="img-circle w-100 rounded-5 d-flex justify-content-center align-items-center">
+                                    <p>ارفقوا صورة للعنوان</p>
+                                </div>
                             </div>
-                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section id="idea" class="section text-light pt-4" dir="ltr">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-md-6 mb-4" dir="rtl" data-aos="fade-right" data-aos-duration="800">
+                                <h5 class="title--has-dash mb-3">فكرة المبادرة</h5>
+                                <p class="text-light-op">تنطلق “ثَرى” من حاجة طلبة القانون لفهم الواقع المهني من الداخل، وذلك من خلال ربطهم بتجارب حقيقية وعملية عبر محتوى تفاعلي متنوع يشمل:</p>
+                                <p class="text-light-op">• حلقات بودكاست قانونية مع ممارسين وخبراء.</p>
+                                <p class="text-light-op">• لقاءات حوارية مباشرة مع نخبة من المختصين.</p>
+                                <p class="text-light-op">• مقالات وتجارب مكتوبة يشارك فيها أصحاب الخبرة الميدانية.</p>
+                                <p class="text-light-op">نهدف إلى كشف الصورة الحقيقية للعمل القانوني، وإبراز التحديات التي قد تواجه المبتدئين، وتسليط الضوء على الفرص الواعدة وتقديم نصائح عملية ومباشرة.</p>
+                            </div>
+                            <div class="col-md-6 img-holder" data-aos="fade-left" data-aos-duration="800">
+                                <div class="img-circle w-100 rounded-5 d-flex justify-content-center align-items-center">
+                                    <p>ارفقوا صورة للعنوان</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <section id="vision" class="section bg-dark text-purple text-center">
             <div class="container" data-aos="zoom-out" data-aos-duration="1200">
                 <h2 class="mb-4">رؤيــــتــنــا</h2>
@@ -823,7 +831,7 @@
                 direction: 'rtl',
                 pagination: true,
                 drag: 'free',
-                autoplay: false,
+                autoplay: true,
                 interval: 2000,
                 speed: 1000,
 
@@ -866,28 +874,21 @@
 
             // -----------------------------------------------------
             const intro = document.querySelector("#intro");
-            const intro_content = document.querySelector('.intro-content');
-            const us_section = document.querySelector("#us");
+            const intro_content = document.querySelector(".intro-content");
+            const us_section = document.querySelector(".multiple-bg-purple");
+
             window.onscroll = function() {
+                let value = window.pageYOffset / us_section.offsetTop + 1;
 
-            let value = window.pageYOffset / us_section.offsetTop + 1;
-            if (value <= 1.6)
-                intro.style.transform = `scale(${value})`;
+                if (value <= 1.2)
+                    intro.style.transform = `scale(${value})`;
 
-            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-                intro_content.style.opacity = 0;
-                intro_content.style.transform = 'translate3d(0,-100px,0)';
-                // stylesheet.insertRule( '#intro::after { content: ""; background-color: rgb(238 234 251 / 90%);; }',
-                // stylesheet.cssRules.length
-                // );
-                
-            } else {
-                intro_content.style.opacity = 1;
-                intro_content.style.transform = 'none';
-                // stylesheet.insertRule( '#intro::after { content: ""; background-color: rgb(238 234 251 / 60%);; }',
-                // stylesheet.cssRules.length
-                // );
-            }
+                console.log("a" + document.body.scrollTop);
+                if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                    intro_content.style.opacity = 0;
+                } else {
+                    intro_content.style.opacity = 1;
+                }
             };
         </script>
         <!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> -->

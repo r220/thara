@@ -139,7 +139,7 @@ html {
 }
 .hero-content {
     position: relative;
-    transition: opacity 0.3;
+    transition: opacity 0.3 ease;
 }
 .hero-content h1 {
     font-size: calc(1.475rem + 2.7vw);
@@ -255,7 +255,7 @@ header {
     background-color: #fffdf0;
     border-radius: 20px;
     color: #492e87;
-    height: 97%;
+    height: 93%;
     box-shadow: 2px 1px 10px 0px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
@@ -275,8 +275,11 @@ header {
     height: 35%;
 }
 .episode-card p, .blog-card p  {
-    font-size: smaller;
+    font-size: 0.75rem;;
     color: #ab9abd;
+}
+.p-date {
+    font-size: 0.7rem;
 }
 .blog-card {
     border-radius: 15px;
@@ -302,6 +305,10 @@ header {
     text-overflow: ellipsis;
     line-clamp: 2; /* Adjust the number of lines to truncate */
     -webkit-line-clamp: 2; /* For WebKit browsers */
+}
+#blogs .text-truncate-multiline {
+    line-clamp: 3; /* Adjust the number of lines to truncate */
+    -webkit-line-clamp: 3; /* For WebKit browsers */
 }
 
 
