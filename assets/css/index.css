@@ -160,7 +160,7 @@ html {
     flex-direction: column;
     -webkit-align-content: center;
     align-content: center;
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
 }
 .hero-nav {
     position: fixed;

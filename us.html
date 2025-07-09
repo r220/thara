@@ -38,6 +38,7 @@
                 background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
                 background-size: cover;
                 background-position: center;
+                background-repeat: no-repeat;
                 position: fixed;
                 z-index: 1;
                 height: 100vh;
@@ -46,7 +47,7 @@
                 color: #492E87;
                 -webkit-align-content: center;
                 align-content: center;
-                transition: transform 0.3s ease;
+                transition: transform 1.5s ease;
             }
             #intro::after {
                 content: "";
@@ -196,8 +197,9 @@
             }
             */
             #platform-sections {
-                box-shadow:none;
-                background-color: none !important;
+                box-shadow: none;
+                background: none !important;
+                backdrop-filter: none;
             }
             /*
             #platform-sections, #companies{
@@ -327,7 +329,7 @@
             </nav>
         </header>
         
-        <section id="intro" class="hero d-flex justify-content-center text-light z-0" data-aos="zoom-out" data-aos-duration="1000">
+        <section id="intro" class="hero d-flex justify-content-center text-light z-0" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="50">
             <div class="intro-content container z-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="100">
                 <h4 class="display-1 text-center mb-4" style="font-weight: bold;">حــكـــايــــة ثــــرى</h4>
                 <h4 class="display-6 text-center">أصلٌ وجذور، ونماءٌ.. اسمٌ يُجسّد رؤيتنا في التأسيس والتمكين</h4>
