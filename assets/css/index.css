@@ -56,10 +56,7 @@
     align-items: center !important;
 }
 /****************************************/
-html > *, body > *{
-    overflow-x: hidden;
-    overflow-x: clip;
-}
+
 .loader-wrapper {
     position: fixed;
     height: 100%;
@@ -132,6 +129,10 @@ html > *, body > *{
 
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+html, body {
+    overflow-x: hidden;
+    overflow-x: clip;
+}
 body {
     font-family: 'Cairo', sans-serif;
     background-color: #F7F6FB;
@@ -140,10 +141,10 @@ html {
     scroll-behavior: smooth;
 }
 
-    body, html {
-      margin: 0;
-      padding: 0;
-    }
+body, html {
+    margin: 0;
+    padding: 0;
+}
 .section {
     padding: 60px 20px;
     z-index: 2;
