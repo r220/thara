@@ -65,7 +65,7 @@
             }
             .intro-content {              
                 position: relative;
-                transition: opacity 0.3 ease;
+                transition: opacity 0.3s ease;
 
             }
             #intro .display-1 {
@@ -835,8 +835,8 @@
         <!-- <script src="assets/js/index.js"></script> -->
         <script>
             $(window).on("load", function() {
-  $(".loader-wrapper").fadeOut("slow");
-});
+            $(".loader-wrapper").fadeOut("slow");
+            });
             AOS.init();
             var splide_companies = new Splide('#splide_companies', {
                 pauseOnHover : true,              
