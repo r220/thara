@@ -445,6 +445,7 @@ header {
 footer {
     position: relative;
     z-index: 2;
+    height: fit-content;
 }
 footer .container {
     padding: 0 15px;
