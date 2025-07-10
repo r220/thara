@@ -904,6 +904,11 @@
                     intro_content.style.opacity = 0;
                 }
 
+                 if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                    intro_content.style.opacity = 0;
+                } else {
+                    intro_content.style.opacity = 1;
+                }
                 
             };
         </script>
