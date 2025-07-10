@@ -895,19 +895,16 @@
             window.onscroll = function() {
                 let value = window.pageYOffset / us_section.offsetTop + 1;
 
+                console.log("op: " + intro_content.style.opacity);
                 if (value <= 1.2) {
                     intro.style.transform = `scale(${value})`;
-                    intro_content.style.opacity = intro_content.style.opacity - 0.1; 
+                    intro_content.style.opacity = 1;
                 }
                 else {
                     intro_content.style.opacity = 0;
                 }
-                console.log("a" + document.body.scrollTop);
-                if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-                    intro_content.style.opacity = 0;
-                } else {
-                    intro_content.style.opacity = 1;
-                }
+
+                
             };
         </script>
         <!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> -->
