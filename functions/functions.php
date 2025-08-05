@@ -1,177 +1,187 @@
-_____________________________________________
-1- episodes
----------------------------------------------
-<a class="episode-card d-block text-purple bg-card-light">
-    <img src="data:image/jpeg;base64,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" alt="حلقة 1">
-    <div class="episode-text container py-3 d-flex flex-column justify-content-between">
-    <div>                                               
-        <h6 class="text-truncate mb-1">  1: مقدمة في علم المواريث الذي ظل يؤرقناأجيالا كثيرة من الدهور نكامل بينهم سنين</h6>            
-        <p class="text-truncate-multiline m-0">ما هي الاخبار الان كيف الحال مالاخبارما هي الاخبار الان كيف الحال مالاخبار ا هي الاخبار الان كيف الحال مالاخبارما هي الاخبار الان كيف الحال مالاخبار</p>
-    </div> 
-        <p class="m-0">6 july 2025</p>    
-    </div>
-</a>
-_____________________________________________
-2- blogs
----------------------------------------------
-<a class="blog-card d-flex">
-    <img src="https://th.bing.com/th/id/OIP.JFfFBLWAWscGAjLwuJW-kAHaE8?w=221&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;dpr=2&amp;pid=1.7" alt="حلقة 1">
-    
-    <div class="blog-text container py-3 d-flex flex-column justify-content-between">
-        <div>                                               
-            <h6 class="text-truncate">  1: مقدمة في علم المواريث الذي ظل يؤرقناأجيالا كثيرة من الدهور نكامل بينهم سنين</h6>            
-            <p class="text-truncate-multiline m-0">ما هي الاخبار الان كيف الحال مالاخبارما هي الاخبار الان كيف الحال مالاخبار ا هي الاخبار الان كيف الحال مالاخبارما هي الاخبار الان كيف الحال مالاخبار</p>
-        </div> 
-        <p class="m-0">6 july 2025</p>    
-    </div>
-</a>
-_____________________________________________
-3- nav
----------------------------------------------
+<?php
+// 1- GET
+// 2- ADD
+// 3- UPDATE
+// 4- DELETE
+function get_user_email(object $pdo, string $email) {
+    $query = "SELECT * FROM users WHERE email = :email;";
+    $statement = $pdo->prepare($query);
 
-<nav class="navbar navbar-expand-lg container bg-light rounded-3 z-3" data-aos="fade-down" data-aos-duration="600">
-    <div class="container-fluid">
-        <a class="navbar-brand text-purple" href="#">LOGO</a>
-        <button class="navbar-toggler text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-purple"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav text-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">الرئيسية</a>
-                </li>
-                <hr class="my-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">الحلقات</a>
-                </li>
-                <hr class="my-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">الإذاعات</a>
-                </li>
-                <hr class="my-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">من نحن</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-_____________________________________________
-4- footer
----------------------------------------------
-<footer class="bg-purple text-dark">
-    <div class="container">
-        <div class="footer_top">
-            <div class="row">
-            <div class="col-md-4 col-sm-12">
-            <div class="footer_block">
-                <div class="store-links">
-                    <h4 class="title title--has-dash mb-4">
-                        روابط مهمة
-                    </h4>
-                    <ul class="footer-list store-links-items">
-                            <li>
-                            <a href="#" target="_blank">الإذاعات </a>
-                        </li>
-                            <li>
-                            <a href="#" target="_blank">المدونات</a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">من نحن</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <div class="footer_block">
-                <div class="store-about">
-                    <h4 class="title title--has-dash mb-4">
-                        من نحن
-                    </h4>
-                    <p>
-                        منصة ثرى متخصصة في توفير يتلسش كلام زايد الخ منصة ثرى متخصصة في توفير يتلسش كلام زايد الخ بسم الله نبا
-                    </p>
-                </div>
-                <ul
-                    class="footer-list footer-list--row footer-list--social-links">
-                    <li>
-                        <a
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="انستقرام">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://twitter.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="تويتر">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.snapchat.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="سناب شات">
-                            <i class="bi bi-snapchat"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.tiktok.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="تيك توك">
-                            <i class="bi bi-tiktok"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.youtube.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="يوتيوب">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <div class="footer_block">
-                <div class="store-contact-info">
-                    <h4 class="title title--has-dash mb-4">
-                        تواصل معنا
-                    </h4>
-                    <ul class="footer-list">
-                        <li>
-                            <a href="#">
-                                <i class="bi bi-whatsapp"></i>
-                                <span class="text-unicode">+966500000000</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="bi bi-envelope"></i>
-                                <span class="text-unicode">thara@oooooo.com</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-    </div>
-    <div class="footer_bottom text-center">
-        <div class="container">
-            <p class="mb-0">© 2025 جميع الحقوق محفوظة - منصة ثرى</p>
-        </div>
-    </div>
-</footer>
+    $statement->bindparam(":email", $email);
+    $statement->execute();
+
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+
+    return $result;
+}
+function get_videos($pdo) {
+    $query = "SELECT * FROM videos";
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}
+function get_video($pdo, $link) {
+
+    if (!$link) return null;
+
+    $query = "SELECT * FROM videos WHERE link = :link;";
+    $statement = $pdo->prepare($query);
+    $statement->bindparam(":link", $link);
+    $statement->execute();
+
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function get_blogs($pdo) {
+    $query = "SELECT * FROM blogs";
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}
+function get_blog($pdo, $blog_id) {
+    
+    if (!$blog_id) return null;
+
+    $query = "SELECT * FROM blogs WHERE blog_id = :blog_id;";
+    $statement = $pdo->prepare($query);
+    $statement->bindparam(":blog_id", $blog_id);
+    $statement->execute();
+
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+function get_writers($pdo) {
+    $query = "SELECT * FROM writers";
+    $statement = $pdo->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}
+function get_writer($pdo, $writer_id) {
+    if (!$writer_id) return null;
+
+    $query = "SELECT * FROM writers WHERE writer_id = :writer_id;";
+    $statement = $pdo->prepare($query);
+    $statement->bindparam(":writer_id", $writer_id);
+    $statement->execute();
+
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+function get_writer_blogs($pdo, $writer_id) {
+    if (!$writer_id) return null;
+
+    $query = "SELECT * FROM blogs WHERE writer_id = :writer_id;";
+    $statement = $pdo->prepare($query);
+    $statement->bindparam(":writer_id", $writer_id);
+    $statement->execute();
+
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}
+function add_video($pdo, $link, $title, $about) {
+    $query = "INSERT INTO videos (link, title, about) VALUES
+            (:link, :title, :about);";
+
+    $statement = $pdo->prepare($query);
+    $statement->bindparam(":link", $link);
+    $statement->bindparam(":title", $title);
+    $statement->bindparam(":about", $about);
+    $statement->execute();
+}
+function add_blog($pdo, $writer_id, $title, $about, $content) {
+    $query = "INSERT INTO blogs (writer_id, title, about, content) VALUES
+            (:writer_id, :title, :about, :content);";
+
+            $statement = $pdo->prepare($query);
+            $statement->bindparam(":writer_id", $writer_id);
+            $statement->bindparam(":title", $title);
+            $statement->bindparam(":about", $about);
+            $statement->bindparam(":content", $content);
+            $statement->execute();
+}
+function add_writer($pdo, $writer_name, $biograghy) {
+    $query = "INSERT INTO writers (writer_name, biography) VALUES (:writer_name, :biography);";
+    $statement = $pdo->prepare($query);
+    $statement->bindparam(":writer_name", $writer_name);
+    $statement->bindparam(":biography", $biograghy);
+    $statement->execute();
+}
+function update_video(object $pdo, string $link, string $title, string $about) {
+    $query = "UPDATE videos 
+              SET title = :title,
+                  about = :about
+              WHERE link = :link";
+
+    $statement = $pdo->prepare($query);
+
+    $statement->bindparam(":title", $title);
+    $statement->bindparam(":about", $about);
+    $statement->bindparam(":link", $link);
+
+    $statement->execute();
+
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+function update_blog($pdo, $blog_id, $writer_id, $title, $about, $content) {
+    $query = "UPDATE blogs 
+              SET title = :title,
+                  about = :about,
+                  content = :content,
+                  writer_id = :writer_id 
+              WHERE blog_id = :blog_id";
+
+    $statement = $pdo->prepare($query);
+
+    $statement->bindparam(":title", $title);
+    $statement->bindparam(":about", $about);
+    $statement->bindparam(":content", $content);
+    $statement->bindparam(":writer_id", $writer_id);
+    $statement->bindparam(":blog_id", $blog_id);
+
+    $statement->execute();
+
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+function update_writer($pdo, $writer_id, $writer_name, $biography) {
+        $query = "UPDATE writers 
+              SET writer_name = :writer_name,
+                  biography = :biography
+              WHERE writer_id = :writer_id";
+
+    $statement = $pdo->prepare($query);
+
+    $statement->bindparam(":writer_name", $writer_name);
+    $statement->bindparam(":biography", $biography);
+    $statement->bindparam(":writer_id", $writer_id);
+
+    $statement->execute();
+
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function delete_video($pdo, $link) {
+    $query = "DELETE FROM videos where link = :link";
+    $statement = $pdo->prepare($query);
+    $statement->bindparam(":link", $link);
+    $statement->execute();
+}
+
+function delete_blog($pdo, $blog_id) {
+    $query = "DELETE FROM blogs where blog_id = :blog_id";
+    $statement = $pdo->prepare($query);
+    $statement->bindparam(":blog_id", $blog_id);
+    $statement->execute();
+}
+function delete_writer($pdo, $writer_id) {
+    $query = "DELETE FROM writers where writer_id = :writer_id";
+    $statement = $pdo->prepare($query);
+    $statement->bindparam(":writer_id", $writer_id);
+    $statement->execute();
+}

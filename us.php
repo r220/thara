@@ -1,18 +1,18 @@
+<?php
+$base_url = "http://" . $_SERVER['HTTP_HOST'];
+
+?>
+
 <html lang="ar" dir="rtl">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ثرى</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css"> -->
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/parts/head.php" ?>
         <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/index.css">
         <style>
+            .bg-purple p {
+                text-align: justify;
+            }
             .multiple-bg-op-purple {
                 background-color: rgb(73 46 135 / 80%);
                 -webkit-backdrop-filter: blur(2px);
@@ -126,7 +126,6 @@
                 -webkit-backdrop-filter: blur(6px);
                 backdrop-filter: blur(6px);
                 box-shadow: 0px 5px 20px 6px #00000040;
-            
             }
             #vision .vision-text {
                 text-shadow: 0px 0px 10px rgb(73 46 135 / 60%);
@@ -303,39 +302,9 @@
         </style>
     </head>
     <body>
-        <div class="loader-wrapper">
-            <div class="loader"></div>
-        </div>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/parts/loader.php" ?>
 
-        <header class="d-flex justify-content-center z-3">
-            <nav id="navbar" class="navbar navbar-expand-lg container bg-light rounded-3">
-                <div class="container-fluid">
-                    <a class="navbar-brand text-purple" href="index.html">LOGO</a>
-                    <button class="navbar-toggler text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon text-purple"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav text-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">الرئيسية</a>
-                            </li>
-                            <hr class="my-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="podcasts.html">الإذاعة</a>
-                            </li>
-                            <hr class="my-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="blogs.html">المدونة</a>
-                            </li>
-                            <hr class="my-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="us.html">من نحن</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/parts/header.php" ?>
         
         <section id="intro" class="hero d-flex justify-content-center text-light z-0" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="50">
             <div class="intro-content container z-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="100" style="opacity: 1; transform: none;">
@@ -344,7 +313,7 @@
             </div>
         </section>
         <div class="spacer" style="height: 90vh;"></div>
-        <div class="multiple-bg-purple">
+        <div class="multiple-bg-purple  bg-purple">
             <section id="us" class="section text-light pb-4">
                 <div class="container">
                     <div class="row">
@@ -712,128 +681,11 @@
                 <div class="conclude-text">نرحب بكل من يشاركنا الشغف برسالة المبادرة، سواء بالمشاركة، أو الدعم، أو التعاون.لكل مهتم بصناعة الأثر… مكانك بيننا !</p>
             </div>
         </section>
-        <footer class="bg-purple text-dark">
-             <div class="container">
-                <div class="footer_top">
-                    <div class="row">
-                  <div class="col-md-4 col-sm-12">
-                    <div class="footer_block">
-                        <div class="store-links">
-                            <h4 class="title title--has-dash mb-4">
-                                روابط مهمة
-                            </h4>
-                            <ul class="footer-list store-links-items">
-                                 <li>
-                                    <a href="podcasts.html" target="_blank">الإذاعة</a>
-                                </li>
-                                 <li>
-                                    <a href="blogs.html" target="_blank">المدونة</a>
-                                </li>
-                                <li>
-                                    <a href="us.html" target="_blank">من نحن</a>
-                                </li>
-                         </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="footer_block">
-                        <div class="store-about">
-                            <h4 class="title title--has-dash mb-4">
-                                من نحن
-                            </h4>
-                            <p>
-                                منصة ثرى متخصصة في توفير يتلسش كلام زايد الخ منصة ثرى متخصصة في توفير يتلسش كلام زايد الخ بسم الله نبا
-                            </p>
-                        </div>
-                        <ul
-                            class="footer-list footer-list--row footer-list--social-links">
-                            <li>
-                                <a
-                                    href="https://www.instagram.com/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="انستقرام">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://twitter.com/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="تويتر">
-                                    <i class="bi bi-twitter-x"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.snapchat.com/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="سناب شات">
-                                    <i class="bi bi-snapchat"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.tiktok.com/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="تيك توك">
-                                    <i class="bi bi-tiktok"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.youtube.com/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="يوتيوب">
-                                    <i class="bi bi-youtube"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="footer_block">
-                        <div class="store-contact-info">
-                            <h4 class="title title--has-dash mb-4">
-                                تواصل معنا
-                            </h4>
-                            <ul class="footer-list">
-                                <li>
-                                    <a href="#">
-                                        <i class="bi bi-whatsapp"></i>
-                                        <span class="text-unicode">+966500000000</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="bi bi-envelope"></i>
-                                        <span class="text-unicode">thara@oooooo.com</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-            </div>
-            <div class="footer_bottom text-center">
-                <div class="container">
-                    <p class="mb-0">© 2025 جميع الحقوق محفوظة - منصة ثرى</p>
-                </div>
-            </div>
-        </footer>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/parts/footer.php" ?>
     
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/parts/js-scripts.php" ?>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <!-- <script src="assets/js/index.js"></script> -->
+        <script src="assets/js/index.js"></script>
         <script>
             $(window).on("load", function() {
             $(".loader-wrapper").fadeOut("slow");
@@ -912,6 +764,5 @@
                 
             };
         </script>
-        <!-- <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> -->
     </body>
 </html>
